@@ -1,3 +1,47 @@
+* {
+  box-sizing: border-box; }
 
+#inputs-container {
+  padding: 1em;
+  float: left;
+  width: 400px; }
+  #inputs-container input, #inputs-container button, #inputs-container label {
+    display: block;
+    margin: 1em;
+    width: 100%; }
+  #inputs-container input {
+    height: 3em; }
+  #inputs-container button {
+    border: none;
+    background-color: fuchsia;
+    color: white;
+    height: 3em;
+    width: 100%; }
+
+#shapes-container {
+  overflow: hidden;
+  background-color: black;
+  height: 600px;
+  width: 600px;
+  float: right;
+  position: relative; }
+  #shapes-container .square, #shapes-container .rectangle, #shapes-container .circle, #shapes-container .triangle {
+    position: absolute; }
+  #shapes-container .square {
+    background: orange; }
+  #shapes-container .rectangle {
+    background-color: green; }
+  #shapes-container .circle {
+    background: pink;
+    border-radius: 50%; }
+  #shapes-container .triangle {
+    width: 0;
+    height: 0; }
+
+#info-container {
+  clear: both;
+  background-color: black;
+  color: white;
+  padding: 2em; }
 
 /*# sourceMappingURL=style.css.map */

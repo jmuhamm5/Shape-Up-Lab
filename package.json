@@ -2,14 +2,19 @@
   "name": "Shape-Up-Or-Shape-Out",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "typescript.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"tsc --watch typescript.ts\" \"sass --watch sass/main.scss:css/style.css\"",
+    "server": "live-server"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "concurrently": "^3.5.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0"
   }
 }

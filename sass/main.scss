@@ -1,3 +1,68 @@
-@import 'functions';
-@import 'globals';
-@import 'variables';
+* {
+    box-sizing: border-box;
+}
+
+$inputs-height: 3em;
+
+#inputs-container {
+    padding: 1em;
+    float: left;
+    width: 400px;
+
+    input, button, label {
+        display: block;
+        margin: 1em;
+        width: 100%;
+    }
+
+    input {
+        height: $inputs-height;
+    }
+
+    button {
+        border: none;
+        background-color: fuchsia;
+        color: white;
+        height: $inputs-height;
+        width: 100%;
+
+    }
+}
+
+#shapes-container {
+    overflow: hidden;
+    background-color: black;
+    height: 600px;
+    width: 600px;
+    float: right;
+    position: relative;
+
+    .square, .rectangle, .circle, .triangle {
+        position: absolute;
+    }
+
+    .square {
+        background: orange;
+    }
+
+    .rectangle {
+        background-color: green;
+    }
+
+    .circle {
+        background: pink;
+        border-radius: 50%;
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+    }
+}
+
+#info-container {
+    clear: both;
+    background-color: black;
+    color: white;
+    padding: 2em;
+}
