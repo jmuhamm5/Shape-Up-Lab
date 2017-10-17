@@ -1,47 +1,134 @@
+button {
+  float: right; }
+
+.circle {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background-color: purple; }
+
+.control {
+  display: block;
+  margin: 15px; }
+
+h3 {
+  padding-left: 10px; }
+
+input {
+  margin-left: 10px;
+  width: 70px; }
+
+label {
+  display: inline-block;
+  width: 90px; }
+
+#leftBar {
+  width: 40%;
+  height: 600px;
+  border: 1px solid black;
+  display: inline-block;
+  background-color: #D0D0D0; }
+
+#pad {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border: 1px solid black;
+  float: left;
+  background-color: #37474F; }
+
+.pg-wrapper {
+  display: block;
+  position: relative;
+  width: 1200px;
+  margin: 0 auto; }
+
+.shape {
+  position: absolute; }
+
+span {
+  float: right;
+  margin-right: 25px; }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-bottom-style: solid;
+  border-bottom-color: yellow;
+  border-right-style: solid;
+  border-right-color: transparent; }
+
+/*
+
 * {
-  box-sizing: border-box; }
+    box-sizing: border-box;
+}
+
+$inputs-height: 3em;
 
 #inputs-container {
-  padding: 1em;
-  float: left;
-  width: 400px; }
-  #inputs-container input, #inputs-container button, #inputs-container label {
-    display: block;
-    margin: 1em;
-    width: 100%; }
-  #inputs-container input {
-    height: 3em; }
-  #inputs-container button {
-    border: none;
-    background-color: fuchsia;
-    color: white;
-    height: 3em;
-    width: 100%; }
+    padding: 1em;
+    float: left;
+    width: 400px;
+
+    input, button, label {
+        display: block;
+        margin: 1em;
+        width: 100%;
+    }
+
+    input {
+        height: $inputs-height;
+    }
+
+    button {
+        border: none;
+        background-color: red;
+        color: white;
+        height: $inputs-height;
+        width: 100%;
+
+    }
+}
 
 #shapes-container {
-  overflow: hidden;
-  background-color: black;
-  height: 600px;
-  width: 600px;
-  float: right;
-  position: relative; }
-  #shapes-container .square, #shapes-container .rectangle, #shapes-container .circle, #shapes-container .triangle {
-    position: absolute; }
-  #shapes-container .square {
-    background: orange; }
-  #shapes-container .rectangle {
-    background-color: green; }
-  #shapes-container .circle {
-    background: pink;
-    border-radius: 50%; }
-  #shapes-container .triangle {
-    width: 0;
-    height: 0; }
+    overflow: hidden;
+    background-color: #76F8FF;
+    height: 600px;
+    width: 600px;
+    float: right;
+    position: relative;
+
+    .square, .rectangle, .circle, .triangle {
+        position: absolute;
+    }
+
+    .square {
+        background: #F7928A;
+    }
+
+    .rectangle {
+        background-color: #D4E85A;
+    }
+
+    .circle {
+        background: #E5FFF0;
+        border-radius: 50%;
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+    }
+}
 
 #info-container {
-  clear: both;
-  background-color: black;
-  color: white;
-  padding: 2em; }
+    clear: both;
+    background-color: black;
+    color: white;
+    padding: 2em;
+}
+
+*/
 
 /*# sourceMappingURL=style.css.map */

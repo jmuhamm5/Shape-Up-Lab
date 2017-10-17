@@ -12,7 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^3.5.0"
+    "concurrently": "^3.5.0",
+    "materialize-css": "^0.100.2"
   },
   "devDependencies": {
     "live-server": "^1.2.0"

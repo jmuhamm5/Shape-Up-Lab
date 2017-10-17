@@ -4,29 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Shape-Up-Or-Shape-Out</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="inputs-container">
+
+    <div class='pg-wrapper'>
+        <div class='containr'>
+            <div id=leftBar>
+            <h3>Shape Measurement(s)</h3>
+                <div class='control'>
+                    <label for="rectangle">Rectangle: </label>
+                    <input type="number" id="rectangleW" placeholder="Width">
+                    <input type="number" id="rectangleH" placeholder="Height">
+                    <button id='rect'>Add Shape</button>
+                </div>
+                <div class='control'>
+                    <label for="square">Square: </label>
+                    <input id="square" type='number' placeholder="side length">
+                    <button id='sq'>Add Shape</button>
+                </div>
+                <div class='control'>
+                    <label for="circle">Circle: </label>
+                    <input type="number" id="circle" placeholder="radius">
+                    <button id='cir'>Add Shape</button>
+                </div>
+                <div class='control'>
+                    <label for="triangle">Triangle: </label>
+                    <input type="number" id="triangle" placeholder="height">
+                    <button id='tri'>Add Shape</button>
+                    <script src="script.js"></script>
+                </div>
+                <hr>
+                <br>
+                <h3>Shape Properties: </h3>
+                <div class='control'>
+                    <h4>Shape Name: <span id="name"></span></h4>
+                </div>
+                <div class='control'>
+                    <h4>Width: <span id="wid"></span></h4>
+                </div>
+                <div class='control'>
+                    <h4>Height: <span id="hei"></span></h4>
+                </div>
+                <div class='control'>
+                    <h4>Radius: <span id="rad"></span></h4>
+                </div>
+                <div class='control'>
+                    <h4>Area: <span id="area"></span></h4>
+                </div>
+                <div class='control'>
+                    <h4>Perimeter: <span id="peri"></span></h4>
+                </div>
+            </div>
+            <div id="pad">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div id="inputs-container">
         <label for="">Height</label>
-        <input id="rect-height" type="text">
+        <input id="rect-height" type="text" placeholder="Enter Height">
         <label for="">Width</label>
-        <input id="rect-width" type="text">
-        <button onclick="generateShape('rectangle')">Rectangle</button>
+        <input id="rect-width" type="text" placeholder="Enter Width">
+        <button class="waves-effect waves-light btn z-depth-5" onclick="generateShape('rectangle')">Rectangle <i class="material-icons right">send</i></button>
         <label for="">Side</label>
-        <input id="square-side" type="text">
-        <button onclick="generateShape('square')">Square</button>
+        <input id="square-side" type="text" placeholder="Enter Side">
+        <button class="waves-effect waves-light btn z-depth-5" onclick="generateShape('square')">Square <i class="material-icons right">send</i></button>
         <label for="">Radius</label>
-        <input id="circle-radius" type="text">
-        <button onclick="generateShape('circle')">Circle</button>
+        <input id="circle-radius" type="text" placeholder="Enter Radius">
+        <button class="waves-effect waves-light btn z-depth-5" onclick="generateShape('circle')">Circle <i class="material-icons right">send</i></button>
         <label for="">Height</label>
-        <input id="tri-height" type="text">
-        <button onclick="generateShape('triangle')">Triangle</button>
+        <input id="tri-height" type="text" placeholder="Enter Height">
+        <button class="waves-effect waves-light btn z-depth-5" onclick="generateShape('triangle')">Triangle <i class="material-icons right">send</i></button>
     </div>
     <div id="shapes-container"></div>
-    <div id="info-container"></div>
+    <div id="info-container"></div> -->
 
+
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="typescript.js"></script>
 </body>
 </html>
