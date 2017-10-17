@@ -52,7 +52,7 @@ var Rectangle = /** @class */ (function (_super) {
         var _this = _super.call(this, width, height) || this;
         _this.name = 'Rectangle';
         _this.radius = null;
-        _this.div.style.backgroundColor = 'green';
+        _this.div.style.backgroundColor = '#D4E85A';
         _this.div.className = 'shape rectangle';
         return _this;
     }
@@ -64,7 +64,7 @@ var Square = /** @class */ (function (_super) {
         var _this = _super.call(this, height, height) || this;
         _this.name = 'Square';
         _this.radius = null;
-        _this.div.style.backgroundColor = 'red';
+        _this.div.style.backgroundColor = '#F7928A';
         _this.div.style.width = _this.width + 'px';
         _this.div.className = 'shape square';
         return _this;
@@ -76,7 +76,7 @@ var Circle = /** @class */ (function (_super) {
     function Circle(radius) {
         var _this = _super.call(this, radius * 2, radius * 2) || this;
         _this.name = 'Circle';
-        _this.div.style.backgroundColor = 'purple';
+        _this.div.style.backgroundColor = '#E5FFF0';
         _this.div.className += ' circle';
         _this.radius = radius;
         return _this;

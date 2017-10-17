@@ -46,7 +46,7 @@ class Shape {
 	            super(width, height);
 	            this.name = 'Rectangle';
 	            this.radius = null;
-	            this.div.style.backgroundColor = 'green';
+	            this.div.style.backgroundColor = '#D4E85A';
 	            this.div.className = 'shape rectangle';
 	    }
 
@@ -57,7 +57,7 @@ class Shape {
 	        super(height, height);
 	        this.name = 'Square';
 	        this.radius = null;
-	        this.div.style.backgroundColor = 'red';
+	        this.div.style.backgroundColor = '#F7928A';
 	        this.div.style.width = this.width + 'px';
 	        this.div.className = 'shape square';
 	    }
@@ -66,7 +66,7 @@ class Shape {
 	    constructor(radius: number){
 	        super(radius*2, radius*2);
 	        this.name = 'Circle';
-	        this.div.style.backgroundColor = 'purple';
+	        this.div.style.backgroundColor = '#E5FFF0';
 	        this.div.className += ' circle';
 	        this.radius = radius;
 	    }
