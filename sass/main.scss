@@ -9,7 +9,7 @@ button{
 }
 .circle{
     @include roundedCorners();
-    background-color: purple;
+    background-color: #E5FFF0;
 }
 .control{
     display: block;
@@ -31,7 +31,7 @@ label{
     height: 600px;
     border: 1px solid black;
     display: inline-block;
-    background-color: #D0D0D0;
+    background-color: #fff;
 }
 #pad{
     position: relative;
@@ -39,7 +39,7 @@ label{
     height: 600px;
     border: 1px solid black;
     float: left;
-    background-color: #37474F;
+    background-color: #76F8FF;
 }
 .pg-wrapper{
     display: block;
@@ -58,11 +58,17 @@ span{
 	width: 0;
 	height: 0;
 	border-bottom-style: solid;
-    border-bottom-color: yellow;
+  border-bottom-color: yellow;
 	border-right-style: solid;
-    border-right-color: transparent;
+  border-right-color: transparent;
 }
 
+#info-container {
+    clear: both;
+    background-color: black;
+    color: white;
+    padding: 2em;
+}
 
 
 
